@@ -46,6 +46,6 @@ Feel free to explore the project and reach out via the contact section or direct
 
 ---
 
-## 🌐 Live Demo
+## 🌐 Live 
 
-Coming soon...
+https://portfolio-seven-jade-68.vercel.app/
