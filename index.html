@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberSec Portfolio | Rituraj Singh</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+   
+    
+</head>
+<body class="bg-gray-100 font-sans">
+
+
+
+<!-- Navigation -->
+<nav class="bg-black shadow-md fixed w-full z-50">
+  <div class="container mx-auto px-4 py-3">
+    <div class="flex justify-between items-center">
+      
+      <!-- Left: Brand Name -->
+      <a href="#" class="text-2xl font-bold">
+        <span class="text-white">Portfolio</span> <span class="text-red-500">Cyber Security</span>
+      </a>
+
+      <!-- Mobile Menu Button -->
+      <div class="md:hidden">
+        <button id="mobile-menu-button" class="text-white focus:outline-none">
+          <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+               xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Desktop Navigation -->
+      <div class="hidden md:flex space-x-8">
+        <a href="#home" class="nav-link text-white hover:text-green-400 transition">Home</a>
+        <a href="#about" class="nav-link text-white hover:text-green-400 transition">About</a>
+        <a href="#projects" class="nav-link text-white hover:text-green-400 transition">Projects</a>
+        <a href="#skills" class="nav-link text-white hover:text-green-400 transition">Skills</a>
+        <a href="#certifications" class="nav-link text-white hover:text-green-400 transition">Certifications</a>
+        <a href="#Resume" class="nav-link text-white hover:text-green-400 transition">Resume</a>
+        <a href="#experience" class="nav-link text-white hover:text-green-400 transition">Experience</a>
+        <a href="#contact" class="nav-link text-white hover:text-green-400 transition">Contact</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile Navigation -->
+  <div id="mobile-menu" class="hidden md:hidden bg-black border-t border-gray-700">
+    <div class="container mx-auto px-4 py-2 space-y-1">
+      <a href="#home" class="block py-2 px-4 text-white hover:bg-red-800 hover:text-white rounded transition">Home</a>
+      <a href="#about" class="block py-2 px-4 text-white hover:bg-red-800 hover:text-white rounded transition">About</a>
+      <a href="#projects" class="block py-2 px-4 text-white hover:bg-red-800 hover:text-white rounded transition">Projects</a>
+      <a href="#skills" class="block py-2 px-4 text-white hover:bg-red-800 hover:text-white rounded transition">Skills</a>
+      <a href="#certifications" class="block py-2 px-4 text-white hover:bg-red-800 hover:text-white rounded transition">Certifications</a>
+      <a href="#Resume" class="block py-2 px-4 text-white hover:bg-red-800 hover:text-white rounded transition">Resume</a>
+      <a href="#experience" class="block py-2 px-4 text-white hover:bg-red-800 hover:text-white rounded transition">Experience</a>
+      <a href="#contact" class="block py-2 px-4 text-white hover:bg-red-800 hover:text-white rounded transition">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section with Cyber Animation -->
+<section id="home" class="min-h-screen pt-32 pb-20 text-white relative overflow-hidden">
+
+  <!-- Gradient Background -->
+  <div class="absolute inset-0 bg-gradient-to-r from-black via-gray-900 to-red-800 z-0"></div>
+  
+  <!-- Background Hacker PNG -->
+  <img src="Hacker-No-Background.png"
+     class="absolute opacity-10 right-4 md:right-10 bottom-0 w-[300px] md:w-[400px] lg:w-[500px] pointer-events-none select-none z-0"
+     style="filter: brightness(0) saturate(100%);" />
+
+  <!-- Cyber Scanline Overlay -->
+  <div class="absolute inset-0 z-10 pointer-events-none opacity-10"
+       style="background-image: repeating-linear-gradient(to bottom, rgba(255,255,255,0.05) 1px, transparent 3px); animation: flicker 2s infinite ease-in-out;">
+  </div>
+
+  <!-- Main Content -->
+  <div class="relative z-20 container mx-auto px-4 pt-12">
+    <div class="flex flex-col md:flex-row items-center">
+
+      <!-- Left Content -->
+      <div class="md:w-1/2">
+       <h1 class="text-4xl md:text-5xl font-bold mb-4">
+  Hello, I'm 
+<span class="gradient-shine ml-2">Rituraj Singh</span>
+
+</h1>
+
+       <h2 class="text-2xl md:text-3xl mb-6">
+  <span class="typewriter-text text-red-500 font-mono">Cybersecurity Student & Ethical Hacker</span>
+</h2>
+
+        <br>
+        
+        <!-- Terminal Section -->
+        <div class="mb-8">
+          <div class="terminal-header flex items-center">
+            <div class="flex space-x-2">
+              <div class="w-5 h-5 rounded-full bg-red-500"></div>
+              <div class="w-5 h-5 rounded-full bg-yellow-500"></div>
+              <div class="w-5 h-5 rounded-full bg-green-500"></div>
+            </div>
+            <div class="ml-4 text-xs text-gray-400">terminal@rituraj:~</div>
+          </div>
+          <div class="terminal-body">
+            <div id="typed-text">
+              <span class="text-purple-400">$</span> whoami<br>
+              <span class="text-green-400">Cybersecurity enthusiast passionate about network security, penetration testing, and ethical hacking.</span><br>
+              <span class="text-purple-400">$</span> skills<br>
+              <span class="text-green-400">[ "Penetration Testing", "Network Security", "OSINT", "Vulnerability Assessment" ]</span><br>
+              <span class="text-purple-400">$</span> _<span class="typed-cursor">|</span>
+            </div>
+          </div>
+        </div>
+       <br>
+        <!-- Buttons -->
+        <div class="flex space-x-4">
+          <a href="#projects" class="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-lg font-medium transition">View Projects</a>
+          <a href="#contact" class="border border-white hover:bg-white hover:text-gray-900 text-white px-6 py-3 rounded-lg font-medium transition">Contact Me</a>
+          
+        </div>
+      </div>
+      
+
+      <!-- Right: Image with glow + zoom -->
+      <div class="md:w-1/2 mt-12 md:mt-0 flex justify-center">
+        <div class="relative w-fit">
+          <img id="dp-image-hover" src="DP.JPG" alt="Cybersecurity Professional"
+               class="rounded-full w-80 h-80 border-4 border-red-600 shadow-xl transition-transform duration-500 transform hover:scale-110 hover:shadow-red-600">
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<!-- About Section -->
+<section id="about" class="min-h-screen py-16 bg-gradient-to-r from-black via-gray-900 to-red-800 text-white flex items-center">
+  <div class="container mx-auto px-4 flex flex-col md:flex-row items-center gap-12">
+    
+    <!-- Image Left -->
+    <div class="md:w-1/3 flex justify-center md:justify-start slide-left">
+      <img src="DP.JPG" alt="Rituraj Singh" class="rounded-lg shadow-md w-70 h-70 object-cover">
+    </div>
+    
+    <!-- Text Right -->
+    <div class="md:w-2/3 text-left space-y-6 slide-right">
+      <h1 class="text-3xl font-bold text-green-400">About Me</h1>
+      <p class="text-gray-300 leading-relaxed">
+        I'm currently a first-year B.Tech student specializing in Cybersecurity. From the very beginning of my academic journey, I’ve been deeply interested in understanding how digital systems work — and more importantly, how to protect them.
+      </p>
+      <p class="text-gray-300 leading-relaxed">
+        I’ve started learning the fundamentals of ethical hacking, network security, and Linux systems, and have already begun applying this knowledge through hands-on practice, online courses, and small projects.
+      </p>
+      <p class="text-gray-300 leading-relaxed">
+        My goal is to build a strong foundation in cybersecurity, continuously improve through challenges like CTFs and internships, and grow into a professional who can make the digital world more secure.
+      </p>
+      
+      <div class="flex flex-wrap gap-3">
+        <span class="bg-green-800 px-4 py-2 rounded-full text-sm font-medium">Ethical Hacker</span>
+        <span class="bg-blue-800 px-4 py-2 rounded-full text-sm font-medium">Penetration Tester</span>
+        <span class="bg-purple-800 px-4 py-2 rounded-full text-sm font-medium">CTF Player</span>
+        <span class="bg-yellow-800 px-4 py-2 rounded-full text-sm font-medium">Bug Hunter</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="py-16 bg-gradient-to-r from-black via-gray-900 to-red-800 text-white">
+  <div class="container mx-auto px-4">
+    <div class="project-card reveal">
+    <h2 class="text-3xl font-bold text-center mb-4 text-green-400">My Projects</h2>
+    <p class="text-center text-gray-300 mb-12 max-w-2xl mx-auto">
+      Here are some projects I've worked on. Each demonstrates different skills and approaches.
+    </p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      
+      <!-- Project 1 -->
+      <div class="project-card bg-gray-900 rounded-2xl overflow-hidden  ">
+        <img src="Thakur-brothers.png"  alt="Real Estate" class="w-full h-48 object-cover">
+        <div class="p-6 space-y-3">
+          <h3 class="text-xl font-bold text-red-400">Thakur Brothers Real Estate Pvt. Ltd.</h3>
+          <p class="text-gray-300 leading-relaxed">
+            A real estate website with sections for buying land/apartments, renting houses, and investing. Includes an AI chatbot for instant support and role-based logins.
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <span class="bg-green-800 text-white text-xs px-3 py-1 rounded-full">HTML</span>
+            <span class="bg-blue-800 text-white text-xs px-3 py-1 rounded-full">CSS</span>
+            <span class="bg-red-800 text-white text-xs px-3 py-1 rounded-full">JavaScript</span>
+          </div>
+          <div class="flex justify-between mt-4">
+            <a href="#" class="text-green-400 hover:underline">Demo</a>
+            <a href="https://github.com/riturajsingh0001/Thakur_Brothers_Real_Estate.PVT.LTD" class="text-white hover:underline">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card bg-gray-900 rounded-2xl overflow-hidden  ">
+        <img src="Ojas.png" alt="Virtual Assistant" class="w-full h-48 object-cover">
+        <div class="p-6 space-y-3">
+          <h3 class="text-xl font-bold text-red-400">Ojas, Virtual Assistant</h3>
+          <p class="text-gray-300 leading-relaxed">
+            A smart assistant with a Python backend using voice recognition and Gemini API. It responds to queries, provides assistance, and will soon include task automation features.
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <span class="bg-yellow-800 text-white text-xs px-3 py-1 rounded-full">HTML</span>
+            <span class="bg-indigo-800 text-white text-xs px-3 py-1 rounded-full">CSS</span>
+            <span class="bg-pink-800 text-white text-xs px-3 py-1 rounded-full">JavaScript</span>
+            <span class="bg-pink-800 text-white text-xs px-3 py-1 rounded-full">Python</span>
+            <span class="bg-pink-800 text-white text-xs px-3 py-1 rounded-full">Gemini API</span>
+          </div>
+          <div class="flex justify-between mt-4">
+            <a href="#" class="text-green-400 hover:underline">Demo</a>
+            <a href="https://github.com/riturajsingh0001/Ojas-Virtual-Assistant.git" class="text-white hover:underline">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="project-card bg-gray-900 rounded-2xl overflow-hidden  ">
+        <img src="Spy Mic .jpg" alt="Digital Forensics Tool" class="w-full h-48 object-cover">
+        <div class="p-6 space-y-3">
+          <h3 class="text-xl font-bold text-red-400">Arduino-Based Spy Mic Detector</h3>
+          <p class="text-gray-300 leading-relaxed">
+            This is my future project where i will develop a spy mic detector using Arduino. It will detect hidden microphones and alert the user with a buzzer.
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <span class="bg-green-800 text-white text-xs px-3 py-1 rounded-full">Python</span>
+            <span class="bg-purple-800 text-white text-xs px-3 py-1 rounded-full">Arduino</span>
+            <span class="bg-blue-800 text-white text-xs px-3 py-1 rounded-full">Buzzer</span>
+          </div>
+          <div class="flex justify-between mt-4">
+            <a href="#" class="text-green-400 hover:underline">Demo</a>
+            <a href="#" class="text-white hover:underline">Uploaded soon</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <div class="text-center mt-12">
+      <a href="https://github.com/riturajsingh0001?tab=repositories" class="bg-green-600 hover:bg-green-700 text-white font-medium px-6 py-3 rounded-lg transition">
+        View All Projects
+      </a>
+    </div>
+  </div>
+</section>
+
+
+ <!-- Skills Section -->
+<section id="skills" class="py-16 bg-gradient-to-r from-black via-gray-900 to-red-800 text-white">
+  
+  <div class="container mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center mb-6 text-green-400">My Skills</h2>
+    <p class="text-center text-gray-300 mb-12 max-w-2xl mx-auto">
+      Here's a list of my technical skills and tools I frequently work with in cybersecurity and development.
+    </p>
+
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 justify-items-center">
+
+      <!-- Each skill card -->
+      <div class="transform bg-gray-800 rounded-xl px-6 py-4 shadow-md transition duration-300 hover:scale-105 hover:-translate-y-1 hover:bg-red-800 hover:text-white hover:shadow-red-600 text-center w-full  slide-right">
+        <span class="text-lg font-semibold">Python</span>
+      </div>
+
+      <div class="transform bg-gray-800 rounded-xl px-6 py-4 shadow-md transition duration-300 hover:scale-105 hover:-translate-y-1 hover:bg-red-800 hover:text-white hover:shadow-red-600 text-center w-full  slide-left">
+        <span class="text-lg font-semibold">Kali Linux</span>
+      </div>
+
+      <div class="transform bg-gray-800 rounded-xl px-6 py-4 shadow-md transition duration-300 hover:scale-105 hover:-translate-y-1 hover:bg-red-800 hover:text-white hover:shadow-red-600 text-center w-full  slide-right">
+        <span class="text-lg font-semibold">Bash</span>
+      </div>
+
+      <div class="transform bg-gray-800 rounded-xl px-6 py-4 shadow-md transition duration-300 hover:scale-105 hover:-translate-y-1 hover:bg-red-800 hover:text-white hover:shadow-red-600 text-center w-full  slide-left">
+        <span class="text-lg font-semibold">Front-end Developer</span>
+      </div>
+
+      <div class="transform bg-gray-800 rounded-xl px-6 py-4 shadow-md transition duration-300 hover:scale-105 hover:-translate-y-1 hover:bg-red-800 hover:text-white hover:shadow-red-600 text-center w-full  slide-right">
+        <span class="text-lg font-semibold">DSA in Java</span>
+      </div>
+
+      <div class="transform bg-gray-800 rounded-xl px-6 py-4 shadow-md transition duration-300 hover:scale-105 hover:-translate-y-1 hover:bg-red-800 hover:text-white hover:shadow-red-600 text-center w-full  slide-left">
+        <span class="text-lg font-semibold">Ethical Hacking</span>
+      </div>
+
+      <div class="transform bg-gray-800 rounded-xl px-6 py-4 shadow-md transition duration-300 hover:scale-105 hover:-translate-y-1 hover:bg-red-800 hover:text-white hover:shadow-red-600 text-center w-full slide-right">
+        <span class="text-lg font-semibold">Penetration Testing</span>
+      </div>
+
+      <div class="transform bg-gray-800 rounded-xl px-6 py-4 shadow-md transition duration-300 hover:scale-105 hover:-translate-y-1 hover:bg-red-800 hover:text-white hover:shadow-red-600 text-center w-full  slide-left">
+        <span class="text-lg font-semibold">Bug Bounty</span>
+      </div>
+
+      <div class="transform bg-gray-800 rounded-xl px-6 py-4 shadow-md transition duration-300 hover:scale-105 hover:-translate-y-1 hover:bg-red-800 hover:text-white hover:shadow-red-600 text-center w-full  slide-right">
+        <span class="text-lg font-semibold">Metasploit</span>
+      </div>
+
+      <div class="transform bg-gray-800 rounded-xl px-6 py-4 shadow-md transition duration-300 hover:scale-105 hover:-translate-y-1 hover:bg-red-800 hover:text-white hover:shadow-red-600 text-center w-full  slide-left">
+        <span class="text-lg font-semibold">Burp Suite</span>
+      </div>
+
+      <div class="transform bg-gray-800 rounded-xl px-6 py-4 shadow-md transition duration-300 hover:scale-105 hover:-translate-y-1 hover:bg-red-800 hover:text-white hover:shadow-red-600 text-center w-full  slide-right">
+        <span class="text-lg font-semibold">Nmap</span>
+      </div>
+
+      <div class="transform bg-gray-800 rounded-xl px-6 py-4 shadow-md transition duration-300 hover:scale-105 hover:-translate-y-1 hover:bg-red-800 hover:text-white hover:shadow-red-600 text-center w-full  slide-left">
+        <span class="text-lg font-semibold">OWASP ZAP</span>
+      </div>
+
+      <div class="transform bg-gray-800 rounded-xl px-6 py-4 shadow-md transition duration-300 hover:scale-105 hover:-translate-y-1 hover:bg-red-800 hover:text-white hover:shadow-red-600 text-center w-full  slide-right">
+        <span class="text-lg font-semibold">Git</span>
+      </div>
+
+      <div class="transform bg-gray-800 rounded-xl px-6 py-4 shadow-md transition duration-300 hover:scale-105 hover:-translate-y-1 hover:bg-red-800 hover:text-white hover:shadow-red-600 text-center w-full  slide-left">
+        <span class="text-lg font-semibold">SQL Map</span>
+      </div>
+
+      <div class="transform bg-gray-800 rounded-xl px-6 py-4 shadow-md transition duration-300 hover:scale-105 hover:-translate-y-1 hover:bg-red-800 hover:text-white hover:shadow-red-600 text-center w-full  slide-right">
+        <span class="text-lg font-semibold">Nikto</span>
+      </div>
+
+      <div class="transform bg-gray-800 rounded-xl px-6 py-4 shadow-md transition duration-300 hover:scale-105 hover:-translate-y-1 hover:bg-red-800 hover:text-white hover:shadow-red-600 text-center w-full  slide-left">
+        <span class="text-lg font-semibold">Killer RATs</span>
+      </div>
+
+      <div class="transform bg-gray-800 rounded-xl px-6 py-4 shadow-md transition duration-300 hover:scale-105 hover:-translate-y-1 hover:bg-red-800 hover:text-white hover:shadow-red-600 text-center w-full  slide-right">
+        <span class="text-lg font-semibold">Spy Note</span>
+      </div>
+
+      <div class="transform bg-gray-800 rounded-xl px-6 py-4 shadow-md transition duration-300 hover:scale-105 hover:-translate-y-1 hover:bg-red-800 hover:text-white hover:shadow-red-600 text-center w-full  slide-left">
+        <span class="text-lg font-semibold">Maltego</span>
+      </div>
+
+      <div class="transform bg-gray-800 rounded-xl px-6 py-4 shadow-md transition duration-300 hover:scale-105 hover:-translate-y-1 hover:bg-red-800 hover:text-white hover:shadow-red-600 text-center w-full  slide-right">
+        <span class="text-lg font-semibold">John The Ripper</span>
+      </div>
+
+      <div class="transform bg-gray-800 rounded-xl px-6 py-4 shadow-md transition duration-300 hover:scale-105 hover:-translate-y-1 hover:bg-red-800 hover:text-white hover:shadow-red-600 text-center w-full  slide-left">
+        <span class="text-lg font-semibold">Encryption</span>
+      </div>
+    </div>
+
+    <center>
+      <p class="text-center text-white-400 mt-10 text-sm">"Continuously learning — more skills coming soon!"</p>
+    </center>
+  </div>
+</section>
+
+ 
+<!-- Certifications Section -->
+<section id="certifications" class="py-16 bg-gradient-to-r from-black via-gray-900 to-red-800 text-white">
+  <div class="container mx-auto px-4 max-w-6xl">
+    <h2 class="text-4xl font-bold text-green-400 text-center mb-12">Certifications</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+
+      <div class="text-center slide-right ">
+        <img src="Drop Org.png" alt="DROP Certificate" class="w-94 h-50 object-cover rounded-lg mx-auto mb-3 hover:scale-105 transition-transform duration-300">
+        <h3 class="text-lg font-semibold text-green-300">DROP Organization</h3>
+         <h3 class="text-lg font-semibold text-white-300">CyberSecurity & Ethical Hacking</h3>
+        <p class="text-sm text-gray-300">Issued: April 2025</p>
+      </div>
+
+      <div class="text-center slide-left">
+        <img src="Tata.png" alt="Tata Internship" class="w-64 h-50 object-cover rounded-lg mx-auto mb-3 hover:scale-105 transition-transform duration-300">
+        <h3 class="text-lg font-semibold text-green-300">Tata</h3>
+         <h3 class="text-lg font-semibold text-white-300">CyberSecurity Analyst Job Simulation</h3>
+        <p class="text-sm text-gray-300">Issued: January 2025</p>
+      </div>
+
+       <div class="text-center slide-right">
+        <img src="Wrokshop cyber hunter.png" alt="Cyber Hunter Workshop" class="w-64 h-50 object-cover rounded-lg mx-auto mb-3 hover:scale-105 transition-transform duration-300">
+        <h3 class="text-lg font-semibold text-green-300">Cyber Hunter Club</h3>
+          <h3 class="text-lg font-semibold text-white-300">Hunt-Con-0x1 Workshop at Quantum University </h3>
+        <p class="text-sm text-gray-300">Issued: March  2025</p>
+      </div>
+
+       <div class="text-center slide-left">
+        <img src="Hard-Hacks-0x1 workshop.jpg" alt="Cyber Hunter Workshop " class="w-64 h-50 object-cover rounded-lg mx-auto mb-3 hover:scale-105 transition-transform duration-300">
+        <h3 class="text-lg font-semibold text-green-300">Cyber Hunter Club</h3>
+          <h3 class="text-lg font-semibold text-white-300">Hard-hacks-0x1 Workshop at Quantum University</h3>
+        <p class="text-sm text-gray-300">Issued: February 2025</p>
+      </div>
+
+       <div class="text-center slide-right">
+        <img src="ASD Academy.png" alt="ASD Workshop" class="w-64 h-50 object-cover rounded-lg mx-auto mb-3 hover:scale-105 transition-transform duration-300">
+        <h3 class="text-lg font-semibold text-green-300">ASD Academy</h3>
+          <h3 class="text-lg font-semibold text-white-300">CyberSecurity & Ethical Hacking</h3>
+        <p class="text-sm text-gray-300">Issued: June 2025</p>
+      </div>
+
+      <div class="text-center slide-left">
+        <img src="microsoft.png" alt="Microsoft 365 copilot workshop " class="w-64 h-50 object-cover rounded-lg mx-auto mb-3 hover:scale-105 transition-transform duration-300">
+        <h3 class="text-lg font-semibold text-green-300">Microsoft</h3>
+         <h3 class="text-lg font-semibold text-white-300">Microsoft 365 copilot workshop </h3>
+        <p class="text-sm text-gray-300">Issued: October 2024</p>
+      </div>
+     
+      <div class="text-center slide-right">
+        <img src="Hack India Hackathon .jpg" alt="Hack India Hackathon" class="w-64 h-50 object-cover rounded-lg mx-auto mb-3 hover:scale-105 transition-transform duration-300">
+        <h3 class="text-lg font-semibold text-green-300">Hack India Hackathon</h3>
+         <h3 class="text-lg font-semibold text-white-300">Intra University Level Hackathon</h3>
+        <p class="text-sm text-gray-300">Issued: May 2024</p>
+      </div>
+
+
+      <div class="text-center slide-left">
+        <img src="NASA Space app.png" alt="NASA Challenge" class="w-65 h-50 object-cover rounded-lg mx-auto mb-3 hover:scale-105 transition-transform duration-300">
+        <h3 class="text-lg font-semibold text-green-300">NASA SpaceApp Challenge</h3>
+         <h3 class="text-lg font-semibold text-white-300">Internantional Level Hackathon</h3>
+        <p class="text-sm text-gray-300">Issued: October 2024</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+ 
+    <!-- Resume Section -->
+<section id="Resume" class="py-24 bg-gradient-to-r from-black via-gray-900 to-red-800 text-white">
+  <div class="container mx-auto px-4 text-center">
+
+    <!-- Resume Icon -->
+    <i class="fas fa-file-alt text-5xl text-red-400 mb-6 animate-pulse slide-right "></i>
+
+    <!-- Heading -->
+    <h2 class="text-3xl font-bold text-green-400 mb-10 slide-right">My Resume</h2>
+     <!-- Tagline -->
+    <p class="text-green-300 font-mono text-md mb-8 slide-left">// Ready to secure the future — one system at a time</p>
+
+
+    <!-- Buttons -->
+    <div class="flex flex-col sm:flex-row justify-center items-center gap-6 slide-left">
+      <a href="resume.pdf" target="_blank" class="bg-red-600 hover:bg-red-700 px-6 py-3 rounded-lg font-medium transition duration-300 shadow-lg hover:shadow-red-500">
+        View Resume
+      </a>
+      <a href="resume.pdf" download class="bg-green-600 hover:bg-green-700 px-6 py-3 rounded-lg font-medium transition duration-300 shadow-lg hover:shadow-green-500">
+        Download Resume
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- Experience Section -->
+<section id="experience" class="py-16 bg-gradient-to-r from-black via-gray-900 to-red-800 text-white">
+  <div class="container mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center mb-10 text-green-400">Experience</h2>
+    <p class="text-center text-gray-300 mb-12 max-w-3xl mx-auto">
+      Here's a glimpse of my hands-on industry experience through internships and independent work.
+    </p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+
+      <!-- Experience Card 1 -->
+      <div class="project-card bg-gray-900 rounded-2xl overflow-hidden slide-left">
+        <img src="Drop.intern.png" alt="DROP Experience Certificate" class="w-full h-48 object-cover">
+        <div class="p-6 space-y-3">
+          <h3 class="text-xl font-bold text-red-400">Cybersecurity Intern — DROP Organization</h3>
+          <p class="text-gray-300">April 2025 – May 2025</p>
+          <p class="text-gray-400 text-sm">
+            Worked on ethical hacking labs, vulnerability scanning, and basic malware analysis.
+          </p>
+          <div class="flex flex-wrap gap-2 mt-3">
+            <span class="bg-green-800 text-white text-xs px-3 py-1 rounded-full">Nmap</span>
+            <span class="bg-yellow-800 text-white text-xs px-3 py-1 rounded-full">Burp Suite</span>
+            <span class="bg-purple-800 text-white text-xs px-3 py-1 rounded-full">Linux</span>
+          </div>
+
+               <!-- View Certificate Button -->
+    <div class="mt-4  flex justify-end">
+      <a href="https://www.linkedin.com/posts/rituraj-pratap-singh_cybersecurity-cyber-internship-activity-7339895102338674688-0R9d?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFK8mi4BpZ5B4hjQ45I_5xGPH-IphYR6vsg" target="_blank" rel="noopener"
+         class="text-green-400 hover:underline font-medium "> View Certificate</a>
+    </div>
+        </div>
+      </div>
+
+      
+      <!-- Experience Card 2 -->
+      <div class="project-card bg-gray-900 rounded-2xl overflow-hidden slide-left">
+        <img src="saiket.intern.png" alt="Frontend Internship Certificate" class="w-full h-48 object-cover">
+        <div class="p-6 space-y-3">
+          <h3 class="text-xl font-bold text-red-400">Front-end Intern — Saiket Systems</h3>
+          <p class="text-gray-300">May 2025 – June 2025</p>
+          <p class="text-gray-400 text-sm">
+            Worked on responsive web design, interactive UI components, and client-side scripting using modern front-end frameworks.
+          </p>
+          <div class="flex flex-wrap gap-2 mt-3">
+            <span class="bg-green-800 text-white text-xs px-3 py-1 rounded-full">HTML</span>
+            <span class="bg-yellow-800 text-white text-xs px-3 py-1 rounded-full">CSS</span>
+            <span class="bg-red-800 text-white text-xs px-3 py-1 rounded-full">JavaScript</span>
+          </div>
+
+           <!-- View Certificate Button -->
+    <div class="mt-4  flex justify-end">
+      <a href="https://www.linkedin.com/posts/rituraj-pratap-singh_frontenddevelopment-webdevelopment-internshipexperience-activity-7342500662150066178-3-yc?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFK8mi4BpZ5B4hjQ45I_5xGPH-IphYR6vsg" target="_blank" rel="noopener"
+         class="text-green-400 hover:underline font-medium "> View Certificate</a>
+    </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+    <center>
+  <p class="text-center text-white-400 mt-10 text-sm italic">Let's connect — more hands-on experiences are on the way!</p>
+</center>
+
+</section>
+
+    <!-- Contact Section -->
+<section id="contact" class="py-16 bg-gradient-to-r from-black via-gray-900 to-red-800 text-white ">
+<div class="container mx-auto px-4 text-center">
+  <h2 class="text-3xl font-bold text-green-400 mb-10">Contact Me</h2>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+    <!-- Email -->
+    <a href="https://mail.google.com/mail/?view=cm&to=you@example.com" target="_blank" class="bg-gray-900 bg-opacity-70 rounded-xl p-6 shadow-lg hover:shadow-red-600 transition duration-300 flex flex-col items-center  slide-left">
+      <i class="fas fa-envelope text-red-500 text-4xl mb-4"></i>
+      <h3 class="text-lg font-semibold mb-2">Email</h3>
+      <p class="text-gray-300 break-words">singhrituraj9777@gmail.com</p>
+    </a>
+
+    <!-- Phone -->
+    <a href="tel:+919621273088" class="bg-gray-900 bg-opacity-70 rounded-xl p-6 shadow-lg hover:shadow-red-600 transition duration-300 flex flex-col items-center slide-left">
+      <i class="fas fa-phone-alt text-red-500 text-4xl mb-4"></i>
+      <h3 class="text-lg font-semibold mb-2">Phone</h3>
+      <p class="text-gray-300">+91-9621273088</p>
+    </a>
+
+    <!-- LinkedIn -->
+    <a href="https://www.linkedin.com/in/rituraj-pratap-singh" target="_blank" class="bg-gray-900 bg-opacity-70 rounded-xl p-6 shadow-lg hover:shadow-red-600 transition duration-300 flex flex-col items-center slide-left">
+      <i class="fab fa-linkedin text-red-500 text-4xl mb-4"></i>
+      <h3 class="text-lg font-semibold mb-2">LinkedIn</h3>
+      <p class="text-gray-300 break-words">rituraj-pratap-singh</p>
+    </a>
+
+    <!-- GitHub -->
+    <a href="https://github.com/riturajsingh0001" target="_blank" class="bg-gray-900 bg-opacity-70 rounded-xl p-6 shadow-lg hover:shadow-red-600 transition duration-300 flex flex-col items-center slide-left">
+      <i class="fab fa-github text-red-500 text-4xl mb-4"></i>
+      <h3 class="text-lg font-semibold mb-2">GitHub</h3>
+      <p class="text-gray-300 break-all">riturajsingh0001</p>
+    </a>
+  </div>
+
+  <p class="text-gray-400 text-sm mt-12">&copy; 2025 <span class="text-green-400 font-semibold">Rituraj Singh</span>. All rights reserved.</p>
+</div>
+</section>
+</body>
+<script>
+  const revealElements = document.querySelectorAll('.reveal');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('active');
+      }
+    });
+  }, { threshold: 0.2 });
+
+  revealElements.forEach(el => observer.observe(el));
+ // About Section Slide-in Animation//
+  document.addEventListener('DOMContentLoaded', function () {
+  const slideEls = document.querySelectorAll('.slide-left, .slide-right');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('active');
+      }
+    });
+  }, { threshold: 0.2 });
+
+  slideEls.forEach(el => observer.observe(el));
+});
+</script>
+</html>
+
+   
