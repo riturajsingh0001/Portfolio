@@ -16,16 +16,14 @@ Designed with a dark cyber theme, glitch effects, and animated interactions, the
 - 🧾 Certification cards and internship details with certificate viewing
 - 📂 Resume download & view functionality with elegant UI
 - 📬 Contact section with Gmail integration and animated reveal
-- ⚡ Subtle matrix background and glitch static overlays for immersive experience
 
 ---
 
 ## 🛠 Tech Stack
 
 - **HTML5 / CSS3**
-- **TailwindCSS** — utility-first modern design
 - **JavaScript** — scroll-triggered animations, interactivity
-- **Font Awesome**, **Devicon**, **Simple Icons (via CDN)**
+- **Font Awesome**, **Devicon**, 
 
 ---
 
