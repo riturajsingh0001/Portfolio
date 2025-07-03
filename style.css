@@ -22,24 +22,30 @@
 }
 
 /* Typing Animation for Name */
-.gradient-shine {
-  background: linear-gradient(90deg, #ef4444, #10b981, #ef4444);
-  background-size: 200%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: shine 2.5s infinite ease-in-out;
+.slide-blur-in {
+  animation: blurSlideIn 0.8s ease forwards;
+  opacity: 0;
   display: inline-block;
+ 
 }
 
-@keyframes shine {
-  0% { background-position: 0% }
-  100% { background-position: 200% }
+@keyframes blurSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(60px);
+    filter: blur(8px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+    filter: blur(0);
+  }
 }
 
 .typewriter-text {
   display: inline-block;
   overflow: hidden;
-  border-right: 2px solid #ef4444;
+  border-right: 2px solid #f90505;
   white-space: nowrap;
   letter-spacing: 1px;
   animation: typing-effect 3s steps(35, end), blink-cursor 0.8s step-end infinite;
@@ -52,8 +58,9 @@
 
 @keyframes blink-cursor {
   0%, 100% { border-color: transparent; }
-  50% { border-color: #ef4444; }
+  50% { border-color: #f70404; }
 }
+
 
 
 /* Project Card Hover Effect */
