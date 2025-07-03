@@ -7,8 +7,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-   
+    
     
 </head>
 <body class="bg-gray-100 font-sans">
@@ -558,7 +557,34 @@
 </div>
 </section>
 </body>
+  <script>
+  const revealElements = document.querySelectorAll('.reveal');
 
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('active');
+      }
+    });
+  }, { threshold: 0.2 });
+
+  revealElements.forEach(el => observer.observe(el));
+ // About Section Slide-in Animation//
+  document.addEventListener('DOMContentLoaded', function () {
+  const slideEls = document.querySelectorAll('.slide-left, .slide-right');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('active');
+      }
+    });
+  }, { threshold: 0.2 });
+
+  slideEls.forEach(el => observer.observe(el));
+});
+
+  </script>
 </html>
 
    
