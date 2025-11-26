@@ -27,6 +27,7 @@ A responsive, immersive personal portfolio website designed for a Cybersecurity 
 Since this project uses the Tailwind CSS CDN, no build step (npm/node) is strictly required to view it.
 
 1.Clone the repository:
+git clone https://github.com/riturajsingh0001/Portfolio.git
 
 2.Open the project:
 
