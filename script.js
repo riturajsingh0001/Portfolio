@@ -1,5 +1,5 @@
 // Typewriter Effect
-const roles = ["Cybersecurity Student", "Ethical Hacker", "Penetration Tester", "Bug Hunter"];
+const roles = ["Cybersecurity Student", "Ethical Hacker", "Penetration Tester", "Aspiring SOC Analyst"];
 let roleIndex = 0;
 let charIndex = 0;
 let isDeleting = false;
@@ -371,4 +371,5 @@ if (prevBtn && nextBtn && projectTrack) {
         nextBtn.style.opacity = currentSlide === maxSlides ? '0.5' : '1';
         nextBtn.style.cursor = currentSlide === maxSlides ? 'not-allowed' : 'pointer';
     }
+
 }
